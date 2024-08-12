@@ -42,18 +42,18 @@ jobs:
         run: |
           pytest -v unit_tests/tests_units.py
 
-    integration:
-      runs-on: ubuntu-latest
+  integration:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-        - name: Install dependencies
-          run: |
-            python3 -m pip install --upgrade pip
-            pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-        - name: Run API tests
-          run: |
-            pytest -v tests/test_main2.py
+      - name: Run API tests
+        run: |
+          pytest -v tests/test_main2.py
