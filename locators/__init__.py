@@ -1,0 +1,1 @@
+from locators.favorites_locators import FavouritesLocators
