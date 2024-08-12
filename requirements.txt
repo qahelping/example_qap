@@ -7,3 +7,4 @@ selenium==4.22.0
 webdriver-manager==4.0.1
 pytest-rerunfailures
 black==24.8.0
+flake8==7.1.1
