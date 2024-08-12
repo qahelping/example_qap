@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 class MainLocators:
     HEADER = (By.CSS_SELECTOR, '[class="header"]')
     SLIDER = (By.XPATH, '//*[@class="slider"]')
-    RECOMMENDATIONS = (By.CLASS_NAME, 'recommendations')
+    RECOMMENDATIONS = (By.CLASS_NAME, "recommendations")
 
 
 class MainPage(BasePage):

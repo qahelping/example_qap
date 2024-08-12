@@ -1,5 +1,3 @@
-
-
 def test_open_wildberries(driver):
     pass
     # main_page = MainPage(driver)

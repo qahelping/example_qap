@@ -19,4 +19,6 @@ class FavouritesPage(BasePage):
         assert self.get_element(self.locators.GO_SHOPPING_BUTTON)
         assert self.get_element(self.locators.EMPTY_PAGE)
 
-        self.assertions.assert_that_text_is_visible(self.locators.TITLE, 'Здесь будут избранные товары')
+        self.assertions.assert_that_text_is_visible(
+            self.locators.TITLE, "Здесь будут избранные товары"
+        )

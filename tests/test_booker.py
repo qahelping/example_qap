@@ -5,4 +5,4 @@ def test_booker_auth():
     booker = BookerService()
     response = booker.auth("admin", "password123")
 
-    assert response['token']
+    assert response["token"]

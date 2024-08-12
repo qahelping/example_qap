@@ -1,13 +1,9 @@
 import os
-
-import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.options import Options
 
-# from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
 
 import pytest
 
@@ -25,18 +21,18 @@ import pytest
 
 
 # def run_chrome_driver(headless):
-    # options = webdriver.ChromeOptions()
-    # if headless:
-    #     options = webdriver.ChromeOptions()
-    #     options.add_argument('--headless')
-    # driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
-    # driver.implicitly_wait(5)
-    # driver.maximize_window()
-    #
-    # yield driver
-    #
-    # driver.close()
-    # driver.quit()
+# options = webdriver.ChromeOptions()
+# if headless:
+#     options = webdriver.ChromeOptions()
+#     options.add_argument('--headless')
+# driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+# driver.implicitly_wait(5)
+# driver.maximize_window()
+#
+# yield driver
+#
+# driver.close()
+# driver.quit()
 #
 #
 # def run_firefox_driver(headless):
@@ -51,6 +47,7 @@ import pytest
 #
 #     driver.close()
 #     driver.quit()
+
 
 @pytest.fixture
 def driver():
@@ -68,6 +65,7 @@ def driver():
 
     # driver.close()
     driver.quit()
+
 
 # Run tests with different configuration of browser
 # @pytest.fixture(autouse=False, scope="function")

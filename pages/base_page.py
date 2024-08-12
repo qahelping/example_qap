@@ -26,7 +26,7 @@ class BasePage:
         return self.driver.find_element(*selector)
 
     def add_cookie(self, name, value):
-        cookie = {'name': name, 'value': value}
+        cookie = {"name": name, "value": value}
         self.driver.add_cookie(cookie)
 
     def save_screenshot(self, name):
