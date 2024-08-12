@@ -27,6 +27,8 @@ jobs:
         
 
   pytest:
+    needs: flake8
+    if: success()
     runs-on: ubuntu-latest
 
     steps:
@@ -43,6 +45,8 @@ jobs:
           pytest -v unit_tests/tests_units.py
 
   integration:
+    needs: pytest
+    if: success()
     runs-on: ubuntu-latest
 
     steps:
