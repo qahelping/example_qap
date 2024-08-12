@@ -68,11 +68,6 @@ def prepare_db():
     conn.close()
 
 
-import sqlite3
-
-import pytest
-
-
 @pytest.fixture
 def get_connection():
     conn = sqlite3.connect("contact.db")

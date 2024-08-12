@@ -1,6 +1,5 @@
 from data.urls import BASE_URL
-from elements import HeaderElement
-from pages import BasePage
+from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 
 
