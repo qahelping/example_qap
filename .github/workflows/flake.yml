@@ -6,20 +6,15 @@ on:
       - main
   pull_request:
     branches:
-      - main 
+      - main
 
 jobs:
   lint:
-    runs-on: ubuntu-latest:alpine
+    runs-on: python:3-alpine
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
 
     - name: Install dependencies
       run: |
@@ -28,4 +23,4 @@ jobs:
 
     - name: Run Flake8
       run: |
-        flake8 .  # Запускает Flake8 на всех Python-файлах в корневой директории и поддиректориях
+        flake8 .
