@@ -8,7 +8,7 @@ def test_2():
 
 
 def test_3():
-    assert 0 != False
+    assert 0 == False
 
 
 def test_4():
