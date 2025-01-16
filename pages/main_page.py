@@ -4,9 +4,9 @@ from selenium.webdriver.common.by import By
 
 
 class MainLocators:
-    HEADER = (By.CSS_SELECTOR, '[class="header"]')
-    SLIDER = (By.XPATH, '//*[@class="slider"]')
-    RECOMMENDATIONS = (By.CLASS_NAME, "recommendations")
+    HEADER = (By.CSS_SELECTOR, '[class="header j-header"]')
+    SLIDER = (By.XPATH, '//*[@class="main-page__banner banner"]')
+    SEARCH = (By.ID, "searchInput")
 
 
 class MainPage(BasePage):
@@ -21,4 +21,4 @@ class MainPage(BasePage):
     def assert_that_main_is_opened(self):
         assert self.get_element(self.locators.HEADER)
         assert self.get_element(self.locators.SLIDER)
-        assert self.get_element(self.locators.RECOMMENDATIONS)
+        assert self.get_element(self.locators.SEARCH)
